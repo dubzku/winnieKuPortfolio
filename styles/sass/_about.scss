@@ -1,0 +1,16 @@
+section.about {
+    padding: 100px 0;
+
+    h2 {
+        @include fontStyle($bodyFont, $bgColor, 2rem, 500);
+        padding: 20px 0;
+    }
+
+    p {
+        @include fontStyle($bodyFont, $bgColor, 1rem, 400, 1.75rem);
+    }
+
+    .buttonStyle {
+        @include buttonStyle();
+    }
+}

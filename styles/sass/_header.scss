@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    height: 100vh;
+    background-color: $bgColor;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1, h2 {
+        align-self: center;
+        margin-top: 15px;
+    }
+
+    h1 {
+        @include fontStyle($headingFont, $offWhite, 2rem, 700);
+        text-transform: uppercase;
+        .myName {
+            color: $green;
+        }
+    }
+
+    h2 {
+        @include fontStyle($headingFont, $pink, 1.5rem);
+        font-style: italic;
+    }
+
+}
+
+.headshotContainer {
+    align-self: center;
+    width: 200px;
+    img {
+        border-radius: 50%;
+        border: 0.5rem solid $turquoise;
+    }
+}
+

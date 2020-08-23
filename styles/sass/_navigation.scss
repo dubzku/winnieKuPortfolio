@@ -1,0 +1,50 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    height: 8vh;
+    position: fixed;
+    width: 100vw;
+    background-color: $bgColor;
+    padding: 40px 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+    li a {
+        @include fontStyle($headingFont, $offWhite, 0.7rem, 500);
+        padding: 20px;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 5px;
+    }
+
+    i {
+        margin-bottom: 8px;
+        font-size: 1rem;
+    }
+
+    .fa-home {
+        color: $turquoise;
+    }
+
+    .fa-id-card {
+        color: $yellow;
+    }
+
+    .fa-newspaper {
+        color: $pink;
+    }
+
+    .fa-briefcase {
+        color: $green;
+    }
+
+    .fa-envelope {
+        color: $blue;
+    }
+}

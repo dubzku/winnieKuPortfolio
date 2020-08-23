@@ -1,0 +1,35 @@
+$bgColor: #2c3051;
+$lightBgColor: #363b5f;
+$turquoise: #06fff7;
+$pink: #fa709a;
+$yellow: #f6d365;
+$green: #43e97b;
+$blue: #6991c7;
+$offWhite: #f9f9fa;
+
+$bodyFont: 'Poppins', sans-serif; 
+$headingFont: 'Montserrat', sans-serif; 
+
+@mixin fontStyle($family, $color, $size, $weight: 400, $lineHeight: auto) {
+    font-size: $size;
+    font-family: $family;
+    font-weight: $weight;
+    color: $color;
+    line-height: $lineHeight;
+}
+
+@mixin buttonStyle () {
+    @include fontStyle($headingFont, $offWhite, 0.6rem);
+    background-color: $lightBgColor;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    margin: 30px 0;
+    display: inline-block;
+}
+
+// @mixin buttonHover {
+//     transform: scaleX(1.06);
+//     border: 2.5px solid $accentBlue;
+// }

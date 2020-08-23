@@ -1,0 +1,14 @@
+html {
+    font-size: 125%; /* 20px */ 
+}
+
+body {
+    font-family: $bodyFont;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
