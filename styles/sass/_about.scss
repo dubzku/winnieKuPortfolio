@@ -1,9 +1,10 @@
 section.about {
     padding: 100px 0;
+    background-color: $offWhite;
 
     h2 {
         @include fontStyle($bodyFont, $bgColor, 2rem, 500);
-        padding: 20px 0;
+        margin: 20px 0;
     }
 
     p {

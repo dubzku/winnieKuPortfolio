@@ -1,0 +1,27 @@
+section.portfolio {
+    padding: 100px 0;
+    background-color: $offWhite;
+
+    h2 {
+        @include fontStyle($bodyFont, $bgColor, 2rem, 500);
+        text-align: center;
+    }
+
+    .portfolioContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .portfolioPiece {
+        width: calc(400px - 40px);
+        height: calc(400px - 40px);
+        margin: 20px;
+        
+        img {
+            border-radius: 8px;
+            border: 1px solid $bgColor;
+        }
+    }
+}

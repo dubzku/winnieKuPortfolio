@@ -1,0 +1,19 @@
+footer {
+    background-color: $bgColor;
+    padding: 50px 0;
+    
+    .wrapper {
+        text-align: center;
+    }
+
+    a, p {
+        @include fontStyle($bodyFont, $offWhite, 1rem);
+        margin: 10px 0;
+    }
+
+    i {
+        margin: 5px;
+        font-size: 1.5rem;
+    }
+    
+}

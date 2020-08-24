@@ -202,15 +202,6 @@ template {
   display: none;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: '';
-  clear: both;
-  height: 0;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -221,7 +212,7 @@ html {
           box-sizing: inherit;
 }
 
-.sr-only {
+.srOnly {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -404,6 +395,7 @@ header h2 {
 
 section.about {
   padding: 100px 0;
+  background-color: #f9f9fa;
 }
 
 section.about h2 {
@@ -412,7 +404,7 @@ section.about h2 {
   font-weight: 500;
   color: #2c3051;
   line-height: auto;
-  padding: 20px 0;
+  margin: 20px 0;
 }
 
 section.about p {
@@ -433,6 +425,7 @@ section.about .buttonStyle {
   padding: 20px 40px;
   text-transform: uppercase;
   border-radius: 1.5rem;
+  border: 1px solid #363b5f;
   cursor: pointer;
   margin: 30px 0;
   display: inline-block;
@@ -492,7 +485,170 @@ section.skills .skill {
           align-items: center;
 }
 
+section.skills .skill:hover, section.skills .skill:focus {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 section.skills i, section.skills svg {
   font-size: 3.5rem;
   margin-bottom: 15px;
+}
+
+section.portfolio {
+  padding: 100px 0;
+  background-color: #f9f9fa;
+}
+
+section.portfolio h2 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #2c3051;
+  line-height: auto;
+  text-align: center;
+}
+
+section.portfolio .portfolioContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.portfolio .portfolioPiece {
+  width: calc(400px - 40px);
+  height: calc(400px - 40px);
+  margin: 20px;
+}
+
+section.portfolio .portfolioPiece img {
+  border-radius: 8px;
+  border: 1px solid #2c3051;
+}
+
+section.workTogether {
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#000), to(rgba(44, 48, 81, 0.68))), url(../assets/cowomen-7Zy2KV76Mts-unsplash.jpg);
+  background-image: linear-gradient(to bottom left, #000, rgba(44, 48, 81, 0.68)), url(../assets/cowomen-7Zy2KV76Mts-unsplash.jpg);
+  /* Photo by @cowomen from unsplash.com */
+  height: 60vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.workTogether .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.workTogether h2 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #f9f9fa;
+  line-height: auto;
+}
+
+section.contact {
+  padding: 100px 0;
+  background-color: #f9f9fa;
+}
+
+section.contact .wrapper {
+  text-align: center;
+}
+
+section.contact h2 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #2c3051;
+  line-height: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section.contact form {
+  margin: 0 auto;
+}
+
+section.contact input, section.contact textarea {
+  padding: 10px;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #2c3051;
+  line-height: auto;
+  border-radius: 8px;
+  border: 1px solid #2c3051;
+  margin: 10px;
+}
+
+section.contact input {
+  width: calc(375px - 40px);
+}
+
+section.contact textarea {
+  width: 700px;
+  resize: none;
+}
+
+section.contact button {
+  font-size: 0.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #f9f9fa;
+  line-height: auto;
+  background-color: #363b5f;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+  border: 1px solid #363b5f;
+  cursor: pointer;
+  margin: 30px 0;
+  display: inline-block;
+  display: block;
+  margin: 20px auto;
+}
+
+footer {
+  background-color: #2c3051;
+  padding: 50px 0;
+}
+
+footer .wrapper {
+  text-align: center;
+}
+
+footer a, footer p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #f9f9fa;
+  line-height: auto;
+  margin: 10px 0;
+}
+
+footer i {
+  margin: 5px;
+  font-size: 1.5rem;
 }

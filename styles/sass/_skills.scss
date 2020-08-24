@@ -25,6 +25,11 @@ section.skills {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        &:hover,
+        &:focus {
+            transform: scale(1.05);
+            transition: all 0.5s;
+        }
     }
 
     i, svg {

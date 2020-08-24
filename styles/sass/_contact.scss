@@ -1,0 +1,41 @@
+section.contact {
+    padding: 100px 0;
+    background-color: $offWhite;
+
+    .wrapper {
+        text-align: center;
+    }
+
+    h2 {
+        @include fontStyle($bodyFont, $bgColor, 2rem, 500);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+
+    input, textarea {
+        padding: 10px;
+        @include fontStyle($bodyFont, $bgColor, 0.8rem, 400);
+        border-radius: 8px;
+        border: 1px solid $bgColor;
+        margin: 10px;
+    }
+
+    input {
+        width: calc(375px - 40px);
+    }
+
+    textarea {
+        width: 700px;
+        resize: none;
+    }
+
+    button {
+        @include buttonStyle();
+        display: block;
+        margin: 20px auto;
+    }
+}
