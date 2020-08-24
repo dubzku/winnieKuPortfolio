@@ -6,6 +6,7 @@ section.skills {
         @include fontStyle($bodyFont, $offWhite, 2rem, 500);
         margin: 20px 0;
         text-align: center;
+        position: relative;
     }
 
     .skillsContainer {
@@ -30,6 +31,31 @@ section.skills {
             transform: scale(1.05);
             transition: all 0.5s;
         }
+    }
+
+    .fa-html5 {
+        color: $turquoise;
+    }
+
+    .fa-cogs,
+    .devicon-jquery-plain {
+        color: $yellow;
+    }
+
+    .fa-css3-alt,
+    .devicon-sass-original {
+        color: $pink;
+    }
+
+    .fa-react,
+    .devicon-git-plain {
+        color: $green;
+    }
+
+
+    .fa-js-square,
+    .fa-universal-access {
+        color: $blue;
     }
 
     i, svg {

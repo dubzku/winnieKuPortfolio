@@ -15,7 +15,7 @@ portfolio.init = () => {
 // intro heading
 portfolio.introHeading = () => {
     let options = {
-        strings: ["Hey, it's Winnie!", "Front-End Developer", "Proofreading Enthusiast", "Toronto-based", "Let's work together"],
+        strings: ["", "Front-End Developer", "Avid Proofreader", "Emoji Enthusiast", "Toronto-based", "Let's work together"],
         typeSpeed: 50,
         loop: true,
         backDelay: 2000

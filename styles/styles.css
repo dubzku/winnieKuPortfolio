@@ -304,6 +304,16 @@ nav ul li a {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 5px;
+  position: relative;
+}
+
+nav ul li a:hover::after, nav ul li a:focus::after {
+  content: '';
+  background: #f9f9fa;
+  width: 70%;
+  height: 3px;
+  position: absolute;
+  bottom: 5px;
 }
 
 nav ul i {
@@ -444,6 +454,7 @@ section.skills h2 {
   line-height: auto;
   margin: 20px 0;
   text-align: center;
+  position: relative;
 }
 
 section.skills .skillsContainer {
@@ -490,6 +501,30 @@ section.skills .skill:hover, section.skills .skill:focus {
           transform: scale(1.05);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+section.skills .fa-html5 {
+  color: #06fff7;
+}
+
+section.skills .fa-cogs,
+section.skills .devicon-jquery-plain {
+  color: #f6d365;
+}
+
+section.skills .fa-css3-alt,
+section.skills .devicon-sass-original {
+  color: #fa709a;
+}
+
+section.skills .fa-react,
+section.skills .devicon-git-plain {
+  color: #43e97b;
+}
+
+section.skills .fa-js-square,
+section.skills .fa-universal-access {
+  color: #6991c7;
 }
 
 section.skills i, section.skills svg {
