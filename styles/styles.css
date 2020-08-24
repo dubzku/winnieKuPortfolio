@@ -408,6 +408,33 @@ section.about {
   background-color: #f9f9fa;
 }
 
+section.about .wrapper .aboutFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+section.about .wrapper .aboutPhotoContainer {
+  width: calc(350px - 20px);
+  margin-left: 20px;
+}
+
+section.about .wrapper .aboutPhotoContainer img {
+  border-radius: 8px;
+  -webkit-box-shadow: 15px 15px 8px #525990;
+          box-shadow: 15px 15px 8px #525990;
+  margin: 0 auto;
+}
+
+section.about .wrapper .aboutTextContainer {
+  width: 700px;
+}
+
 section.about h2 {
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
@@ -417,12 +444,23 @@ section.about h2 {
   margin: 20px 0;
 }
 
+section.about .introP {
+  font-style: italic;
+  color: #fa709a;
+  font-weight: 600;
+}
+
+section.about .strikeThrough {
+  text-decoration: line-through;
+}
+
 section.about p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #2c3051;
   line-height: 1.75rem;
+  margin: 20px 0;
 }
 
 section.about .buttonStyle {

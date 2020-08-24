@@ -2,13 +2,49 @@ section.about {
     padding: 100px 0;
     background-color: $offWhite;
 
+    .wrapper {
+
+        .aboutFlexContainer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap-reverse;
+            // justify-content: center;
+        }
+        
+        .aboutPhotoContainer {
+            width: calc(350px - 20px);
+            margin-left: 20px;
+            img {
+                border-radius: 8px;
+                box-shadow: 15px 15px 8px lighten($lightBgColor, 15);
+                margin: 0 auto;
+            }
+        }
+
+        .aboutTextContainer {
+            width: 700px;
+            // margin-right: 20px;
+        }
+    }
+
     h2 {
         @include fontStyle($bodyFont, $bgColor, 2rem, 500);
         margin: 20px 0;
     }
 
+    .introP {
+        font-style: italic;
+        color: $pink;
+        font-weight: 600;
+    }
+
+    .strikeThrough {
+        text-decoration: line-through;
+    }
+
     p {
-        @include fontStyle($bodyFont, $bgColor, 1rem, 400, 1.75rem);
+        @include fontStyle($bodyFont, $bgColor, 0.9rem, 400, 1.75rem);
+        margin: 20px 0;
     }
 
     .buttonStyle {

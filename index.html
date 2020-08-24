@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>👋Hey, it's Winnie</title>
+    <title>👋 Hey, it's Winnie</title>
     <script src="https://kit.fontawesome.com/ab4a38dafe.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <!-- Sticky navigation bar at the top of the screen -->
+    <!-- ===== Fixed navigation bar at the top of the screen ===== -->
     <nav>
         <div>
-            <!-- some kind of logo -->
+            <!-- ===== some kind of logo ===== -->
         </div>
         <ul>
             <li><a href="#home"><span class="srOnly">Home icon - a house</span><i class="fas fa-home" aria-hidden="true"></i>Home</a></li>
@@ -23,9 +23,10 @@
             <li><a href="#contact"><span class="srOnly">Contact icon - an envelope</span><i class="fas fa-envelope" aria-hidden="true"></i>Contact</a></li>
         </ul>
     </nav>
-    <!-- Hero-sized header -->
+    <!-- ===== Hero-sized header ===== -->
     <header id="home">
         <div class="wrapper">
+            <div id="round"></div>
             <div class="headshotContainer">
                 <img src="./assets/winnieFunHeadshot.png" alt="Winnie Ku - fun headshot picture">
             </div>
@@ -34,16 +35,25 @@
         </div>
     </header>
     <main>
-        <!-- About Me Section -->
+        <!-- ===== About Me Section ===== -->
         <section class="about" id="about">
             <div class="wrapper">
                 <h2>This is the story all about how...</h2>
-                <p>Hello, world! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime esse recusandae, a tempore cupiditate repellat accusamus deleniti laborum enim ipsum. Assumenda quaerat voluptates dolorem expedita deserunt debitis saepe dolore delectus laudantium, officia tempore dolorum recusandae hic, in aut cum. Magnam.</p>
-                <a href="" class="buttonStyle">Download Resume</a>
+                <div class="aboutFlexContainer">
+                    <div class="aboutTextContainer">
+                        <p>...my life got flipped, turned <span class="introP">right-side-up!</span></p> 
+                        <p> Hello, world! I'm Winnie (and here's attempt #2 at a professional headshot).</p>
+                        <p>I'm an HR professional turned front-end developer, and a recent graduate of Juno College. I love a good coding pun, am an avid camelCaseUser (but have been known to kabob from time-to-time), and am excited to be in a career that combines my <span class="strikeThrough">OCD</span> talent for proper syntax and proofreading with a creative outlet where I can build functional, beautiful things. </p>
+                        <a href="" class="buttonStyle">Download Resume</a>
+                    </div>
+                    <div class="aboutPhotoContainer">
+                        <img src="./assets/winnieRegularHeadshot.png" alt="Winnie Ku - regular headshot picture">
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- ===== Skills Section ===== -->
         <section class="skills" id="skills">
             <div class="wrapper">
                 <h2>Skills</h2>
@@ -94,7 +104,8 @@
                 </div>
             </div>
         </section>
-        <!-- Portfolio Section -->
+
+        <!-- ===== Portfolio Section ===== -->
         <section class="portfolio" id="portfolio">
             <div class="wrapper">
                 <h2>Portfolio</h2>
@@ -115,16 +126,18 @@
             </div>
         </section>
 
+        <!-- ===== Let's Work Together Section ===== -->
         <section class="workTogether">
             <div class="wrapper">
                 <h2>Let's work together</h2>
             </div>
         </section>
-        <!-- Contact Form Section -->
+
+        <!-- ===== Contact Form Section ===== -->
         <section class="contact" id="contact">
             <div class="wrapper">
                 <h2>Get in Touch</h2>
-                <form action="">
+                <form action="http://www.focuspocus.io/magic/49c3c5b73ce87d13a63f65529f2e832b" method="POST">
                     <label for="name" class="srOnly">Your Name</label>
                     <input type="text" id="name" placeholder="Name">
                     <label for="email" class="srOnly">Your Email</label>
@@ -136,6 +149,8 @@
             </div>
         </section>
     </main>
+
+    <!-- ===== Footer ===== -->
     <footer>
         <div class="wrapper">
             <a href="https://www.linkedin.com/in/winn-ku/" target="_blank"><i class="fab fa-linkedin"></i></a>
