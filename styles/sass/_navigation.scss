@@ -1,7 +1,6 @@
-nav {
+nav.mainNav {
     display: flex;
     justify-content: space-between;
-    background: #333;
     height: 8vh;
     position: fixed;
     width: 100vw;
@@ -10,7 +9,7 @@ nav {
     z-index: 10;
 }
 
-nav ul {
+nav.mainNav ul {
     display: flex;
     align-items: center;
 

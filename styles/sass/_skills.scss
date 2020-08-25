@@ -1,6 +1,6 @@
 section.skills {
     padding: 100px 0;
-    background: $bgColor;
+    background: $lightBgColor;
 
     h2 {
         @include fontStyle($bodyFont, $offWhite, 2rem, 500);
@@ -20,7 +20,7 @@ section.skills {
         width: calc(200px - 40px);
         height: calc(200px - 40px);
         margin: 20px;
-        background-color: $lightBgColor;
+        background-color: lighten($lightBgColor, 7);
         border-radius: 8px;
         display: flex;
         flex-direction: column;

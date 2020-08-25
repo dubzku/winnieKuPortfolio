@@ -261,14 +261,13 @@ body {
   margin: 0 auto;
 }
 
-nav {
+nav.mainNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #333;
   height: 8vh;
   position: fixed;
   width: 100vw;
@@ -277,7 +276,7 @@ nav {
   z-index: 10;
 }
 
-nav ul {
+nav.mainNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,7 +285,7 @@ nav ul {
           align-items: center;
 }
 
-nav ul li a {
+nav.mainNav ul li a {
   font-size: 0.7rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -308,7 +307,7 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover::after, nav ul li a:focus::after {
+nav.mainNav ul li a:hover::after, nav.mainNav ul li a:focus::after {
   content: '';
   background: #f9f9fa;
   width: 70%;
@@ -317,28 +316,28 @@ nav ul li a:hover::after, nav ul li a:focus::after {
   bottom: 5px;
 }
 
-nav ul i {
+nav.mainNav ul i {
   margin-bottom: 8px;
   font-size: 1rem;
 }
 
-nav ul .fa-home {
+nav.mainNav ul .fa-home {
   color: #06fff7;
 }
 
-nav ul .fa-id-card {
+nav.mainNav ul .fa-id-card {
   color: #f6d365;
 }
 
-nav ul .fa-newspaper {
+nav.mainNav ul .fa-newspaper {
   color: #fa709a;
 }
 
-nav ul .fa-briefcase {
+nav.mainNav ul .fa-briefcase {
   color: #43e97b;
 }
 
-nav ul .fa-envelope {
+nav.mainNav ul .fa-envelope {
   color: #6991c7;
 }
 
@@ -487,7 +486,7 @@ section.about a:focus {
 
 section.skills {
   padding: 100px 0;
-  background: #2c3051;
+  background: #363b5f;
 }
 
 section.skills h2 {
@@ -523,7 +522,7 @@ section.skills .skill {
   width: calc(200px - 40px);
   height: calc(200px - 40px);
   margin: 20px;
-  background-color: #363b5f;
+  background-color: #434976;
   border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -788,8 +787,14 @@ section.workTogether h2 {
 }
 
 section.contact {
-  padding: 100px 0;
   background-color: #f9f9fa;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section.contact .wrapper {
@@ -822,12 +827,7 @@ section.contact input, section.contact textarea {
   margin: 10px;
 }
 
-section.contact input {
-  width: 100%;
-  max-width: calc(350px - 20px);
-}
-
-section.contact textarea {
+section.contact input, section.contact textarea {
   width: 100%;
   max-width: 700px;
   resize: none;
@@ -860,18 +860,47 @@ footer .wrapper {
   text-align: center;
 }
 
-footer a, footer p {
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer nav ul li {
+  margin: 0px 8px;
+}
+
+footer nav ul li a:focus {
+  outline: 1px dotted #f9f9fa;
+}
+
+footer nav ul li:nth-child(1) a {
+  color: #06fff7;
+}
+
+footer nav ul li:nth-child(2) a {
+  color: #f6d365;
+}
+
+footer nav ul li:nth-child(3) a {
+  color: #fa709a;
+}
+
+footer i {
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+footer p {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #f9f9fa;
   line-height: auto;
   margin: 10px 0;
-}
-
-footer i {
-  margin: 5px;
-  font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -891,4 +920,46 @@ footer i {
   section.portfolio .portfolioPiece {
     height: 350px;
   }
+}
+
+.thankYouPage header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.thankYouPage .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.thankYouPage p {
+  color: #fa709a;
+  margin: 15px 0px;
+  font-style: italic;
+}
+
+.thankYouPage a {
+  font-size: 0.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #f9f9fa;
+  line-height: auto;
+  background-color: #363b5f;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+  border: 1px solid #363b5f;
+  cursor: pointer;
+  margin: 30px 0;
+  color: #f9f9fa;
 }

@@ -6,14 +6,39 @@ footer {
         text-align: center;
     }
 
-    a, p {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        li {
+            margin: 0px 8px;
+
+            a:focus {
+                @include buttonFocus($offWhite);
+            }
+
+            &:nth-child(1) a  {
+                color: $turquoise;
+            }
+
+            &:nth-child(2) a  {
+                color: $yellow;
+            }
+
+            &:nth-child(3) a  {
+                color: $pink;
+            }
+        }
+    }
+
+    i {
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+
+    p {
         @include fontStyle($bodyFont, $offWhite, 1rem);
         margin: 10px 0;
     }
 
-    i {
-        margin: 5px;
-        font-size: 1.5rem;
-    }
-    
+
 }

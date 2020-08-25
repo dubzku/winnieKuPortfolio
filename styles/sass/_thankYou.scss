@@ -1,0 +1,22 @@
+.thankYouPage {
+    header {
+        display: flex;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    p {
+        color: $pink;
+        margin: 15px 0px;
+        font-style: italic;
+    }
+
+    a {
+        @include buttonStyle();
+    }
+}
