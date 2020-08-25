@@ -47,7 +47,11 @@ section.about {
         margin: 20px 0;
     }
 
-    .buttonStyle {
+    a {
         @include buttonStyle();
+        display: inline-block;
+    }
+    a:focus {
+        @include buttonFocus($bgColor);
     }
 }
