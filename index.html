@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>👋 Hey, it's Winnie</title>
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/ab4a38dafe.js" crossorigin="anonymous"></script>
+    <!-- Devicons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <!-- AOS Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <!-- ===== Fixed navigation bar at the top of the screen ===== -->
     <nav class="mainNav">
-        <div>
-            <!-- ===== some kind of logo ===== -->
-        </div>
-        <ul>
+        <ul data-aos="fade-down" data-aos-duration="700">
             <li><a href="#home" class="scroll"><span class="srOnly">Home icon - a house</span><i class="fas fa-home" aria-hidden="true"></i>Home</a></li>
             <li><a href="#about" class="scroll"><span class="srOnly">About icon - an ID card</span><i class="fas fa-id-card" aria-hidden="true"></i>About</a></li>
             <li><a href="#skills" class="scroll"><span class="srOnly">Skills icon - a newspaper</span><i class="fas fa-newspaper" aria-hidden="true"></i>Skills</a></li>
@@ -25,8 +28,7 @@
     </nav>
     <!-- ===== Hero-sized header ===== -->
     <header id="home">
-        <div class="wrapper">
-            <div id="round"></div>
+        <div class="wrapper" data-aos="fade-up" data-aos-duration="700">
             <div class="headshotContainer">
                 <img src="./assets/winnieFunHeadshot.png" alt="Winnie Ku - fun headshot picture">
             </div>
@@ -37,14 +39,14 @@
     <main>
         <!-- ===== About Me Section ===== -->
         <section class="about" id="about">
-            <div class="wrapper">
+            <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <h2>This is the story all about how...</h2>
                 <div class="aboutFlexContainer">
                     <div class="aboutTextContainer">
                         <p>...my life got flipped, turned <span class="introP">right-side-up!</span></p> 
                         <p>👋🌎 Hello, world! I'm Winnie - thanks for making it to my corner of the internet!</p>
                         <p>I'm an HR professional turned front-end developer, and a recent graduate of Juno College. I love a good coding pun, am an avid camelCaseUser (but have been known to kabob from time-to-time), and am excited to be in a career that combines my <span class="strikeThrough">OCD</span> sharp eye for proper syntax and proofreading with a creative outlet where I can build beautiful, functional applications.</p>
-                        <a href="">Download Resume</a>
+                        <a href="https://drive.google.com/file/d/1Eadyq0ce1rtRFLkDL10ggL7x5wY6TQyo/view?usp=sharing" target="_blank">Download Resume</a>
                     </div>
                     <div class="aboutPhotoContainer">
                         <img src="./assets/winnieRegularHeadshot.png" alt="Winnie Ku - regular headshot picture">
@@ -55,7 +57,7 @@
 
         <!-- ===== Skills Section ===== -->
         <section class="skills" id="skills">
-            <div class="wrapper">
+            <div class="wrapper" data-aos="zoom-in-up" data-aos-duration="1000">
                 <h2>Skills</h2>
                 <div class="skillsContainer">
                     <div class="skill">
@@ -110,7 +112,7 @@
             <div class="wrapper">
                 <h2>Portfolio</h2>
                 <div class="portfolioContainer">
-                    <div class="portfolioPiece laptopPiece projectFour">
+                    <div class="portfolioPiece laptopPiece projectFour" data-aos="zoom-in-right" data-aos-duration="1000">
                         <div class="overlay"></div>
                         <img src="./assets/smartmockups-newIdentityWhoDis-laptop2.png" alt="Laptop preview of 'New Identity, Who Dis?' app">
                         <div class="overlayDetails">
@@ -121,7 +123,7 @@
                             <a href="https://github.com/Globex-Inc/winnieKuPhilipTurkiewiczProjectFour" target="_blank">GitHub</a>
                         </div>
                     </div>
-                    <div class="portfolioPiece mobilePiece projectFive">
+                    <div class="portfolioPiece mobilePiece projectFive" data-aos="zoom-in-left" data-aos-duration="1000">
                         <div class="overlay"></div>
                         <img src="./assets/smartmockups-tellMeWhereToGo-mobile2.png" alt="Mobile preview of 'Tell Me Where To Go' app">
                         <div class="overlayDetails">
@@ -132,7 +134,7 @@
                             <a href="https://github.com/dubzku/tellMeWhereToGo" target="_blank">GitHub</a>
                         </div>
                     </div>
-                    <div class="portfolioPiece mobilePiece projectThree">
+                    <div class="portfolioPiece mobilePiece projectThree" data-aos="zoom-in-right" data-aos-duration="1000">
                         <div class="overlay"></div>
                         <img src="./assets/smartmockups-whereToNext-mobile2.png" alt="Mobile preview of 'Where To Next' app">
                         <div class="overlayDetails">
@@ -143,7 +145,7 @@
                             <a href="https://github.com/dubzku/whereToNext" target="_blank">GitHub</a>
                         </div>
                     </div>
-                    <div class="portfolioPiece laptopPiece projectTwo">
+                    <div class="portfolioPiece laptopPiece projectTwo" data-aos="zoom-in-left" data-aos-duration="1000">
                         <div class="overlay"></div>
                         <img src="./assets/smartmockups-boatRideAdventures-laptop2.png" alt="Laptop preview of 'Boat Ride Adventures' PSD conversion">
                         <div class="overlayDetails">
@@ -167,8 +169,8 @@
 
         <!-- ===== Contact Form Section ===== -->
         <section class="contact" id="contact">
-            <div class="wrapper">
-                <h2>Say hello!</h2>
+            <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
+                <h2>💬 Say hello!</h2>
                 <form action="http://www.focuspocus.io/magic/49c3c5b73ce87d13a63f65529f2e832b" method="POST">
                     <label for="name" class="srOnly">Your Name</label>
                     <input type="text" name="name" id="name" placeholder="Name">
@@ -197,9 +199,15 @@
     </footer>
     
     <!-- ===== Script tags ===== -->
+    <!-- jQuery  -->
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <!-- Sweet Alerts -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <!-- AOS Animate on Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Script.js -->
     <script src="scripts/script.js"></script>
 </body>
 </html>
