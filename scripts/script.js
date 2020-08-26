@@ -8,6 +8,7 @@ $(document).ready(function(){
 
 // Init
 portfolio.init = () => {
+    AOS.init();
     portfolio.introHeading();
     portfolio.scrollEffects();
     portfolio.submitForm();
