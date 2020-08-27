@@ -17,8 +17,8 @@ section.skills {
         @include fontStyle($headingFont, $offWhite, 0.8rem);
     }
     .skill {
-        width: calc(200px - 40px);
-        height: calc(200px - 40px);
+        width: calc(195px - 40px);
+        height: calc(195px - 40px);
         margin: 20px;
         background-color: lighten($lightBgColor, 7);
         border-radius: 8px;
