@@ -12,7 +12,9 @@ portfolio.init = () => {
     portfolio.introHeading();
     portfolio.scrollEffects();
     portfolio.submitForm();
-    console.log('init is working!');
+    portfolio.uncheckHamburger();
+    portfolio.accessibleHamburger();
+    portfolio.hamburgerMenu();
 }
 
 // Typed.js function in header intro 
@@ -46,4 +48,33 @@ portfolio.submitForm = () => {
             swal("Oops!", "Please complete all fields!");
         }
     })
+}
+
+
+// To toggle class for hamburger menu animation (.is-active class animates it into an X) 
+portfolio.hamburgerMenu = () => {
+    $('.hamburger').on('click', () => {
+        $('.hamburger').toggleClass('is-active');
+    })
+}
+
+// To uncheck the .hamburger input checkbox when any link is clicked, so the menu disappears
+portfolio.uncheckHamburger = () => {
+    $('.scroll').on('click', () => {
+        $('#toggle').prop('checked', false);
+        $('.hamburger').removeClass('is-active');
+    })
+}
+
+// For Accessibility - so keyboard users can hit "enter" on the hamburger, and have it open the menu
+portfolio.accessibleHamburger = () => {
+    $('.hamburger').keypress(function(e) {
+    if(e.which == 13 && $('#toggle').prop('checked') === false ) {
+        $(this).trigger('click');
+        $('#toggle').prop('checked', true);
+    } else if (e.which == 13 && $('#toggle').prop('checked') === true) {
+        $(this).trigger('click');
+        $('#toggle').prop('checked', false);
+    }
+});
 }

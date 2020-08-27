@@ -1,10 +1,58 @@
+@media (max-width: 940px) {
+    section.about .wrapper {
+        .aboutFlexContainer {
+            flex-direction: column-reverse;
+        }
+
+        .aboutPhotoContainer {
+            width: 100%;
+            align-self: center;
+            margin-left: 0px;
+        }
+        .aboutTextContainer {
+            width: 100%;
+            margin-right: 0px;
+        }
+    }
+    
+
+}
+
 @media (max-width: 768px) {
     .wrapper {
         width: 90%;
     }
+    nav.mainNav ul.mainMenu {
+        visibility: collapse;
+    }
+    label[for="toggle"] {
+        display: block;
+        position: fixed;
+        z-index: 15;
+    }
 }
 
 @media (max-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+    }
+      body {
+        position: relative
+    }
+    header {
+        h1 {
+            font-size: 1.4rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+    section.about h2,
+    section.portfolio h2,
+    section.skills h2,
+    section.contact h2 {
+        font-size: 1.4rem;
+    }
     section.skills {
         .skill {
             width: calc(140px - 40px);

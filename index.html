@@ -18,7 +18,7 @@
 <body>
     <!-- ===== Fixed navigation bar at the top of the screen ===== -->
     <nav class="mainNav">
-        <ul data-aos="fade-down" data-aos-duration="700">
+        <ul class="mainMenu" data-aos="fade-down" data-aos-duration="700">
             <li><a href="#home" class="scroll"><span class="srOnly">Home icon - a house</span><i class="fas fa-home" aria-hidden="true"></i>Home</a></li>
             <li><a href="#about" class="scroll"><span class="srOnly">About icon - an ID card</span><i class="fas fa-id-card" aria-hidden="true"></i>About</a></li>
             <li><a href="#skills" class="scroll"><span class="srOnly">Skills icon - a newspaper</span><i class="fas fa-newspaper" aria-hidden="true"></i>Skills</a></li>
@@ -26,6 +26,23 @@
             <li><a href="#contact" class="scroll"><span class="srOnly">Contact icon - an envelope</span><i class="fas fa-envelope" aria-hidden="true"></i>Contact</a></li>
         </ul>
     </nav>
+    <!-- ===== Hidden hamburger menu for screens 768px and below ===== -->
+    <label for="toggle">
+        <a class="hamburger hamburger--collapse" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
+            <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+        </a>  
+    </label>
+    <input type="checkbox" id="toggle" name="toggle">
+    <nav class="hiddenMenu">
+        <ul>
+            <li><a href="#home" class="scroll"><span class="srOnly">Home icon - a house</span><i class="fas fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href="#about" class="scroll"><span class="srOnly">About icon - an ID card</span><i class="fas fa-id-card" aria-hidden="true"></i>About</a></li>
+            <li><a href="#skills" class="scroll"><span class="srOnly">Skills icon - a newspaper</span><i class="fas fa-newspaper" aria-hidden="true"></i>Skills</a></li>
+            <li><a href="#portfolio" class="scroll"><span class="srOnly">Portfolio icon - a briefcase</span><i class="fas fa-briefcase" aria-hidden="true"></i>Portfolio</a></li>
+            <li><a href="#contact" class="scroll"><span class="srOnly">Contact icon - an envelope</span><i class="fas fa-envelope" aria-hidden="true"></i>Contact</a></li>
+        </ul>
+    </nav>
+    
     <!-- ===== Hero-sized header ===== -->
     <header id="home">
         <div class="wrapper" data-aos="fade-up" data-aos-duration="700">
@@ -45,11 +62,11 @@
                     <div class="aboutTextContainer">
                         <p>...my life got flipped, turned <span class="introP">right-side-up!</span></p> 
                         <p>👋🌎 Hello, world! I'm Winnie - thanks for making it to my corner of the internet!</p>
-                        <p>I'm an HR professional turned front-end developer, and a recent graduate of Juno College. I love a good coding pun, am an avid camelCaseUser (but have been known to kabob from time-to-time), and am excited to be in a career that combines my <span class="strikeThrough">OCD</span> sharp eye for proper syntax and proofreading with a creative outlet where I can build beautiful, functional applications.</p>
+                        <p>I'm a front-end developer from Toronto with overseas work experience and a history of working in Agile environments. I'm a fan of witty banter, an avid camelCaseUser (but have been known to kabob from time-to-time), and am excited to be in a career that combines my <span class="strikeThrough">OCD</span> sharp eye for clean code and proper syntax with a creative outlet where I can build beautiful, functional applications.</p>
                         <a href="https://drive.google.com/file/d/1Eadyq0ce1rtRFLkDL10ggL7x5wY6TQyo/view?usp=sharing" target="_blank">Download Resume</a>
                     </div>
                     <div class="aboutPhotoContainer">
-                        <img src="./assets/winnieRegularHeadshot.png" alt="Winnie Ku - regular headshot picture">
+                        <img src="./assets/winnieRegularHeadshotSquare.png" alt="Winnie Ku - regular headshot picture">
                     </div>
                 </div>
             </div>

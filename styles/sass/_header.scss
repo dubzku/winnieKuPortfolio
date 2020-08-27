@@ -17,6 +17,7 @@ header {
     h1 {
         @include fontStyle($headingFont, $offWhite, 2rem, 700);
         text-transform: uppercase;
+        text-align: center;
         .myName {
             color: $green;
         }

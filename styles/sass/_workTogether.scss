@@ -13,6 +13,7 @@ section.workTogether {
     }
 
     h2 {
-        @include fontStyle($bodyFont, $offWhite, 2rem, 500)
+        @include fontStyle($bodyFont, $offWhite, 2rem, 500);
+        text-align: center;
     }
 }
