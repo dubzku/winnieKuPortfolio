@@ -389,10 +389,6 @@ nav.hiddenMenu li a {
   text-align: center;
 }
 
-nav.hiddenMenu li a:hover, nav.hiddenMenu li a:focus {
-  color: #f6d365;
-}
-
 nav.hiddenMenu li i {
   margin-right: 10px;
 }
@@ -562,6 +558,7 @@ header h1, header h2 {
       -ms-grid-row-align: center;
       align-self: center;
   margin-top: 15px;
+  text-align: center;
 }
 
 header h1 {
@@ -571,7 +568,6 @@ header h1 {
   color: #f9f9fa;
   line-height: auto;
   text-transform: uppercase;
-  text-align: center;
 }
 
 header h1 .myName {
@@ -640,7 +636,7 @@ section.about h2 {
 
 section.about .introP {
   font-style: italic;
-  color: #fa709a;
+  color: #f95789;
   font-weight: 600;
 }
 
@@ -658,6 +654,10 @@ section.about p {
 }
 
 section.about a {
+  color: #f95789;
+}
+
+section.about .resume {
   font-size: 0.6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -674,7 +674,7 @@ section.about a {
   display: inline-block;
 }
 
-section.about a:focus {
+section.about .resume:focus {
   outline: 1px dotted #2c3051;
 }
 
@@ -733,7 +733,7 @@ section.skills .skill {
           align-items: center;
 }
 
-section.skills .skill:hover, section.skills .skill:focus {
+section.skills .skill:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-transition: all 0.5s;

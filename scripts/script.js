@@ -50,7 +50,6 @@ portfolio.submitForm = () => {
     })
 }
 
-
 // To toggle class for hamburger menu animation (.is-active class animates it into an X) 
 portfolio.hamburgerMenu = () => {
     $('.hamburger').on('click', () => {
@@ -69,12 +68,12 @@ portfolio.uncheckHamburger = () => {
 // For Accessibility - so keyboard users can hit "enter" on the hamburger, and have it open the menu
 portfolio.accessibleHamburger = () => {
     $('.hamburger').keypress(function(e) {
-    if(e.which == 13 && $('#toggle').prop('checked') === false ) {
-        $(this).trigger('click');
-        $('#toggle').prop('checked', true);
-    } else if (e.which == 13 && $('#toggle').prop('checked') === true) {
-        $(this).trigger('click');
-        $('#toggle').prop('checked', false);
-    }
-});
+        if(e.which == 13 && $('#toggle').prop('checked') === false ) {
+            $(this).trigger('click');
+            $('#toggle').prop('checked', true);
+        } else if (e.which == 13 && $('#toggle').prop('checked') === true) {
+            $(this).trigger('click');
+            $('#toggle').prop('checked', false);
+        }
+    });
 }

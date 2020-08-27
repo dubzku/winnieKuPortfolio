@@ -3,7 +3,6 @@ section.about {
     background-color: $offWhite;
 
     .wrapper {
-
         .aboutFlexContainer {
             display: flex;
             justify-content: space-between;
@@ -32,7 +31,7 @@ section.about {
 
     .introP {
         font-style: italic;
-        color: $pink;
+        color: darken($pink, 5);
         font-weight: 600;
     }
 
@@ -46,10 +45,14 @@ section.about {
     }
 
     a {
+        color: darken($pink, 5);
+    }
+
+    .resume {
         @include buttonStyle();
         display: inline-block;
     }
-    a:focus {
+    .resume:focus {
         @include buttonFocus($bgColor);
     }
 }

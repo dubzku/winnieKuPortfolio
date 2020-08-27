@@ -12,12 +12,12 @@ header {
     h1, h2 {
         align-self: center;
         margin-top: 15px;
+        text-align: center;
     }
 
     h1 {
         @include fontStyle($headingFont, $offWhite, 2rem, 700);
         text-transform: uppercase;
-        text-align: center;
         .myName {
             color: $green;
         }
@@ -27,7 +27,6 @@ header {
         @include fontStyle($headingFont, $pink, 1.5rem);
         font-style: italic;
     }
-
 }
 
 .headshotContainer {
