@@ -713,9 +713,9 @@ section.skills .skillsContainer {
 }
 
 section.skills .skill {
-  width: calc(195px - 40px);
-  height: calc(195px - 40px);
-  margin: 20px;
+  width: calc(205px - 30px);
+  height: calc(205px - 30px);
+  margin: 15px;
   background-color: #434976;
   border-radius: 8px;
   display: -webkit-box;
