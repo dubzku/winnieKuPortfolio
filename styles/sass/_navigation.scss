@@ -149,6 +149,9 @@ label[for="toggle"] {
     border: 0;
     margin: 0;
     overflow: visible; 
+    &:focus {
+        @include buttonFocus($offWhite);
+    }
 }
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
