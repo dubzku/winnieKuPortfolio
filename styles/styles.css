@@ -308,13 +308,12 @@ nav.mainNav ul li a {
   position: relative;
 }
 
-nav.mainNav ul li a:hover::after, nav.mainNav ul li a:focus::after {
-  content: '';
-  background: #f9f9fa;
-  width: 70%;
-  height: 3px;
-  position: absolute;
-  bottom: 5px;
+nav.mainNav ul li a:hover, nav.mainNav ul li a:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 65%;
 }
 
 nav.mainNav ul i {
@@ -858,7 +857,7 @@ section.portfolio .portfolioPiece .overlayDetails p {
   margin: 15px 0;
 }
 
-section.portfolio .portfolioPiece .overlayDetails a {
+section.portfolio .portfolioPiece .overlayDetails .portfolioLink {
   font-size: 0.6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -878,8 +877,12 @@ section.portfolio .portfolioPiece .overlayDetails a {
   color: #2c3051;
 }
 
-section.portfolio .portfolioPiece .overlayDetails a:focus {
+section.portfolio .portfolioPiece .overlayDetails .portfolioLink:focus {
   outline: 1px dotted #f9f9fa;
+}
+
+section.portfolio .portfolioPiece .overlayDetails a {
+  color: #06fff7;
 }
 
 section.portfolio .portfolioPiece:hover .overlayDetails,

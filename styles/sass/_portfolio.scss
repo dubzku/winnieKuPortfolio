@@ -57,16 +57,20 @@ section.portfolio {
                 @include fontStyle($bodyFont, $offWhite, 0.8rem, 400, 1rem);
                 margin: 15px 0;
             }
-            a {
+            .portfolioLink {
                 @include buttonStyle();
                 display: inline-block;
                 padding: 10px 20px;
                 background-color: $offWhite;
                 color: $bgColor;
             }
-            a:focus {
+            .portfolioLink:focus {
                 @include buttonFocus($offWhite);
             }
+            a {
+                color: $turquoise;
+            }
+            
         }
 
         &:hover .overlayDetails,

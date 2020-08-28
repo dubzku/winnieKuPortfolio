@@ -22,14 +22,11 @@ nav.mainNav ul {
         align-items: center;
         margin: 0 5px;
         position: relative;
-        &:hover::after,
-        &:focus::after {
-            content: '';
-            background: $offWhite;
-            width: 70%;
-            height: 3px;
-            position: absolute;
-            bottom: 5px;
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+            transition: all 0.5s;
+            opacity: 65%;
         }
     }
 
