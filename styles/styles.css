@@ -433,6 +433,10 @@ label[for="toggle"] {
   overflow: visible;
 }
 
+.hamburger:focus {
+  outline: 1px dotted #f9f9fa;
+}
+
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
@@ -1135,9 +1139,6 @@ footer p {
 @media (max-width: 480px) {
   html, body {
     overflow-x: hidden;
-  }
-  body {
-    position: relative;
   }
   header h1 {
     font-size: 1.4rem;
