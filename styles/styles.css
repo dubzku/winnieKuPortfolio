@@ -736,13 +736,6 @@ section.skills .skill {
           align-items: center;
 }
 
-section.skills .skill:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
 section.skills .fa-html5 {
   color: #06fff7;
 }
@@ -1010,11 +1003,12 @@ section.contact h2 {
   color: #2c3051;
   line-height: auto;
   text-align: center;
-  margin-bottom: 20px;
+  padding-top: 30px;
 }
 
 section.contact form {
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 section.contact input, section.contact textarea {
@@ -1158,6 +1152,14 @@ footer p {
   }
   section.skills i, section.skills svg {
     font-size: 2.5rem;
+  }
+  section.skills svg {
+    position: relative;
+    bottom: -5px;
+  }
+  section.skills .firebaseSkill {
+    position: relative;
+    bottom: 8px;
   }
   section.portfolio .portfolioPiece {
     height: 350px;

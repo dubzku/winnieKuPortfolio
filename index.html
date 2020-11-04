@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hey, it's Winnie. Nice to meet you!">
     <title>Hey, it's Winnie</title>
+    <link rel="canonical" href="https://heyitswinnie.io/">
     <!-- ===== 🍠Favicon ====== -->
     <link rel="icon" href="./favicon.png">
     <!-- ===== Font Awesome ===== -->
@@ -16,6 +18,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
     <!-- ===== Stylesheet ===== -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZE6WWVGCW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2ZE6WWVGCW');
+    </script>
 </head>
 <body>
     <!-- ===== Fixed navigation bar at the top of the screen ===== -->
@@ -57,7 +68,7 @@
     <header id="home">
         <div class="wrapper" data-aos="fade-up" data-aos-duration="700">
             <div class="headshotContainer">
-                <img src="./assets/winnieFunHeadshot.png" alt="Winnie Ku - fun headshot picture">
+                <img src="./assets/winnieFunHeadshotResized.png" alt="Winnie Ku - fun headshot picture">
             </div>
             <h1><span role="img" aria-label="wave emoji">👋</span> Hey, it's <span class="myName">Winnie</span></h1>
             <h2><span class="introduction"><!--Dynamically added content --></span></h2>
@@ -73,7 +84,7 @@
                         <p>...my life got flipped, turned <span class="introP">right-side-up!</span></p> 
                         <p><span role="img" aria-label="waving emoji" title="Hello">👋</span><span role="img" aria-label="world emoji" title="World"> 🌎</span> Hello, world! I'm Winnie, but I'm also affectionately known as <span role="img" aria-label="sweet potato emoji" title="sweet potato">🍠</span> by friends in the <a class="regularLink" href="https://junocollege.com/" target="_blank">Juno College</a> community (cool story, I'll tell you about it sometime).</p>
                         <p>I'm a front-end developer from Toronto with overseas work experience and a history of working in Agile team environments. I'm a fan of witty banter, an avid camelCaseUser (but have been known to kabob from time-to-time), and am excited to be in a career that combines my <span class="strikeThrough">OCD</span> sharp eye for clean code and proper syntax with a creative outlet where I can build beautiful, functional applications.</p>
-                        <a class="resume" href="" target="_blank">Download Resume</a>
+                        <!-- <a class="resume" href="" target="_blank">Download Resume</a> -->
                     </div>
                     <div class="aboutPhotoContainer">
                         <img src="./assets/winnieRegularHeadshotSquare.png" alt="Winnie Ku - regular headshot picture">
@@ -120,7 +131,7 @@
                         width="70" height="70"
                         viewBox="0 0 226 226"
                         style=" fill:#06fff7;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g fill="#06fff7"><path d="M37.66667,174.20833l71.72675,-134.48883c1.51138,-2.83442 5.59821,-2.78263 7.03425,0.09417l24.82233,49.64467z"></path><path d="M37.66667,174.17067l26.11242,-161.02029c0.68271,-4.21396 6.34213,-5.12737 8.31962,-1.34187l50.31796,96.4455z"></path><path d="M37.70433,174.14242l0.94167,-0.73921l82.53237,-67.52221l-23.278,-44.61617z"></path><path d="M37.66667,174.20833l125.55242,-121.06537c2.63196,-2.53779 7.02483,-1.04054 7.56158,2.57546l17.55267,118.48992l-70.625,41.16496c-2.86738,1.61025 -6.36567,1.61025 -9.23304,0z"></path></g></g></svg>
-                        <p>Firebase</p>
+                        <p class="firebaseSkill">Firebase</p>
                     </div>
                     <div class="skill">
                         <span class="srOnly">SCSS icon</span><i class="devicon-sass-original" aria-hidden="true"></i>
